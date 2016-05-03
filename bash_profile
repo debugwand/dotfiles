@@ -184,5 +184,5 @@ function prompt_char {
   in_git_repo && echo -ne '±' && return
   echo '$'
 }
-export PS1='${CYAN}\u ${D}at ${ORANGE}\h ${D}in ${GREEN}$(ps_status)${D}${PINK}\n$(prompt_char)\[\033[0m\] '
+export PS1='${CYAN}\u ${D}at ${ORANGE}\h ${D}in ${GREEN}$(ps_status) ${D}$(date +%k:%M:%S) \n$(prompt_char)\[\033[0m\] '
 export DISPLAY=:0.0
